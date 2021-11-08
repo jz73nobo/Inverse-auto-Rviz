@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  
+  <!-- Start the diff drive simulation -->
+  <include file="$(find mbot_description)/launch/display_mbot_base_urdf.launch"/>
+  
+  <!-- Start the visualization node -->
+  <node name="mbot" pkg="control" type="mbot" output="screen"/>
+  
+</launch>

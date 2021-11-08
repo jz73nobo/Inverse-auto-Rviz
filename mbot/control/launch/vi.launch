@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  
+  <!-- Start the diff drive simulation -->
+  <include file="$(find mbot_description)/launch/display_mbot_base_urdf.launch"/>
+  
+  <!-- Start the control node -->
+  <node name="control" pkg="control" type="control" output="screen">
+      <rosparam file="$(find control)config/param.yaml" command="load"/>
+  </node>
+  
+  <!-- Start the dynamic node -->
+  <node name="dynamic" pkg="control" type="dynamic" output="screen">
+      <rosparam file="$(find control)config/param.yaml" command="load"/>
+  </node>
+  
+</launch>

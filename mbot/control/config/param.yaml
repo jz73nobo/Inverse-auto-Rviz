@@ -1,0 +1,20 @@
+zeit: 0.02
+pi: 3.1415926
+g: 9.8
+
+theta: 0.15
+m_pend: 0.2
+l_pend: 0.3
+J_pend: 0.018
+v_pend: 0.0
+a_pend: 0.0
+
+v_cart: 0.0
+m_cart: 0.5
+a_cart: 0.0
+s_cart: 0.0
+
+P: 100.0
+I: 1.0
+D: 30.0
+F: 0.0
